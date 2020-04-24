@@ -245,12 +245,9 @@ declare namespace marked {
             type: 'hr';
         }
 
-        interface BlockquoteStart {
-            type: 'blockquote_start';
-        }
-
-        interface BlockquoteEnd {
-            type: 'blockquote_end';
+        interface Blockquote extends AbstractToken {
+            type: 'blockquote';
+            text: string;
         }
 
         interface ListStart {
