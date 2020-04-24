@@ -250,25 +250,20 @@ declare namespace marked {
             text: string;
         }
 
-        interface ListStart {
-            type: 'list_start';
+        interface List extends AbstractToken {
+            type: 'list';
             ordered: boolean;
+            start: number | string;
+            loose: boolean;
+            items: ListItem[];
         }
 
-        interface LooseItemStart {
-            type: 'loose_item_start';
-        }
-
-        interface ListItemStart {
-            type: 'list_item_start';
-        }
-
-        interface ListItemEnd {
-            type: 'list_item_end';
-        }
-
-        interface ListEnd {
-            type: 'list_end';
+        interface ListItem {
+            checked: boolean;
+            loose: boolean;
+            raw: string;
+            task: boolean;
+            text: string;
         }
 
         interface Paragraph {
