@@ -221,7 +221,7 @@ declare namespace marked {
             type: 'space';
         }
 
-        interface Code {
+        interface Code extends AbstractToken {
             type: 'code';
             codeBlockStyle?: 'indented';
             lang?: string;
