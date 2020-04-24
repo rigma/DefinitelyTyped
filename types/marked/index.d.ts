@@ -228,9 +228,9 @@ declare namespace marked {
             text: string;
         }
 
-        interface Heading {
+        interface Heading extends AbstractToken {
             type: 'heading';
-            depth: number;
+            depth: 1 | 2 | 3 | 4 | 5 | 6;
             text: string;
         }
 
