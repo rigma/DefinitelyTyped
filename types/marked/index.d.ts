@@ -212,6 +212,11 @@ declare namespace marked {
         | Tokens.Text;
 
     namespace Tokens {
+        interface AbstractToken {
+            type?: string;
+            raw: string;
+        }
+
         interface Space {
             type: 'space';
         }
