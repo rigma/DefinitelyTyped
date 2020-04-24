@@ -217,7 +217,7 @@ declare namespace marked {
             raw: string;
         }
 
-        interface Space {
+        interface Space extends AbstractToken {
             type: 'space';
         }
 
