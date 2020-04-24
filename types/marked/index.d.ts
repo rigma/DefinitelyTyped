@@ -266,9 +266,8 @@ declare namespace marked {
             text: string;
         }
 
-        interface Paragraph {
+        interface Paragraph extends AbstractToken {
             type: 'paragraph';
-            pre?: boolean;
             text: string;
         }
 
