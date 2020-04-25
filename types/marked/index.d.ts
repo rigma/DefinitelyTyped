@@ -271,10 +271,10 @@ declare namespace marked {
             text: string;
         }
 
-        interface HTML {
-            type: 'html';
-            pre: boolean;
+        interface HTML extends AbstractToken {
+            type: 'html' | 'paragraph';
             text: string;
+            pre: boolean;
         }
 
         interface Text {
