@@ -277,7 +277,7 @@ declare namespace marked {
             pre: boolean;
         }
 
-        interface Text {
+        interface Text extends AbstractToken {
             type: 'text';
             text: string;
         }
