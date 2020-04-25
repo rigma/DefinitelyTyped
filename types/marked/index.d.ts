@@ -241,7 +241,7 @@ declare namespace marked {
             cells: string[][];
         }
 
-        interface Hr {
+        interface Hr extends AbstractToken {
             type: 'hr';
         }
 
