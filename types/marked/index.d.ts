@@ -200,16 +200,14 @@ declare namespace marked {
         | Tokens.Heading
         | Tokens.Table
         | Tokens.Hr
-        | Tokens.BlockquoteStart
-        | Tokens.BlockquoteEnd
-        | Tokens.ListStart
-        | Tokens.LooseItemStart
-        | Tokens.ListItemStart
-        | Tokens.ListItemEnd
-        | Tokens.ListEnd
+        | Tokens.Blockquote
+        | Tokens.List
+        | Tokens.ListItem
         | Tokens.Paragraph
         | Tokens.HTML
         | Tokens.Text;
+
+    type ListItem = Tokens.ListItem;
 
     namespace Tokens {
         interface AbstractToken {
