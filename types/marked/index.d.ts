@@ -234,7 +234,7 @@ declare namespace marked {
             text: string;
         }
 
-        interface Table {
+        interface Table extends AbstractToken {
             type: 'table';
             header: string[];
             align: Array<'center' | 'left' | 'right' | null>;
